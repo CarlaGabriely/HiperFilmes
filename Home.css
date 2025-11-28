@@ -1,0 +1,170 @@
+
+.container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  flex: 1;
+}
+
+.section { 
+  font-size: 0; 
+  scroll-margin-top: 120px; 
+}
+
+.section-title {
+  font-size: 2rem; 
+  font-weight: 700; 
+  margin-bottom: 2rem; 
+  color: #fff; 
+  text-align: left;
+  position: relative; 
+  display: block; 
+  width: 100%;
+}
+
+.section-title::after { 
+  content: ''; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 0; 
+  width: 60px; 
+  height: 3px; 
+  background: #e74c3c; 
+}
+
+
+.cards { 
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+  margin-bottom: 3rem !important;
+}
+
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.trailer-block { 
+  margin: 3rem 0; 
+  text-align: initial; 
+}
+
+.video-container { 
+  position: relative; 
+  border-radius: 15px; 
+  overflow: hidden; 
+  margin: 1rem 0; 
+}
+
+iframe { 
+  border-radius: 15px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,.3); 
+}
+
+
+.trailer-progress-label {
+  font-weight: 500; 
+  font-size: 2rem; 
+  color: #fff;
+  margin-top: 1rem; 
+  margin-bottom: .5rem; 
+  text-align: left; 
+  position: relative; 
+  padding-left: .5rem;
+}
+
+.trailer-progress-label::before { 
+  content: ''; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 40px; 
+  height: 2px; 
+  background: #e74c3c; 
+}
+
+#trailerprogress { 
+  display: block; 
+  width: 100%; 
+  max-width: 500px; 
+  height: 12px; 
+  border-radius: 6px; 
+  overflow: hidden; 
+  accent-color: #e74c3c; 
+}
+
+#bg-audio { 
+  display: block; 
+  margin-top: .75rem; 
+  margin-bottom: 1rem; 
+  width: 100%; 
+  max-width: 500px; 
+  border-radius: 10px; 
+}
+
+.soundtrack-desc { 
+  font-weight: 500; 
+  font-size: 2rem; 
+  margin-bottom: 1rem; 
+  text-align: left; 
+  position: relative; 
+  padding-left: .5rem; 
+}
+
+.soundtrack-desc::before { 
+  content: ''; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 40px; 
+  height: 2px; 
+  background: #e74c3c; 
+}
+
+@keyframes fadeIn { 
+  from{
+    opacity:0; 
+    transform: translateY(20px)
+  } 
+  to{
+    opacity:1; 
+    transform:none
+  } 
+}
+
+.card { 
+  animation: fadeIn .6s ease-out; 
+}
+
+mark { 
+  background: rgba(231,76,60,.3); 
+  color: #fff; 
+  padding: .2rem .4rem; 
+  border-radius: 4px; 
+}
+
+@media (max-width: 768px){
+  .container { 
+    padding: 1rem; 
+  }
+}
+
+@media (max-width: 480px){
+  .section-title { 
+    font-size: 1.5rem; 
+  }
+  
+  iframe { 
+    height: 250px; 
+  }
+}
