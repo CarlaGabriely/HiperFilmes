@@ -1,6 +1,6 @@
 # 🎬 HiperFilmes - Sistema de Catálogo de Filmes
 
-Aplicação web desenvolvida em React.js + TypeScript para gerenciamento e visualização de catálogo de filmes.
+Aplicação web desenvolvida em React.js + TypeScript para gerenciamento e visualização de catálogo de filmes, com integração a **backend/API** para fornecimento e consumo dos dados.
 
 ## 📚 Projeto Acadêmico
 
@@ -13,6 +13,7 @@ Trabalho final da disciplina **Front-end Frameworks** do curso de Análise e Des
 - **React Router DOM** (navegação)
 - **CSS3** (estilização)
 - **HTML5**
+- **Backend/API** (consumo de dados)
 
 ## ✅ Requisitos Atendidos
 
@@ -22,6 +23,7 @@ Trabalho final da disciplina **Front-end Frameworks** do curso de Análise e Des
 - ✅ TypeScript obrigatório
 - ✅ Navegação entre páginas
 - ✅ Design responsivo
+- ✅ Integração com backend/API
 
 ## 📦 Componentes Desenvolvidos
 
